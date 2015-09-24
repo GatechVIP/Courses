@@ -4,6 +4,7 @@
   "dependencies": {},
   "devDependencies": {
     "apache-server-configs": "^2.8.0",
+    "blanket": "^1.1.7",
     "bower": "^1.5.3",
     "connect-livereload": "^0.4.0",
     "grunt": "^0.4.5",
