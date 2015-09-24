@@ -79,7 +79,7 @@ module.exports = function (grunt) {
             },
             test: {
                 options: {
-                    port: 9001,
+                    port: grunt.option('port') || SERVER_PORT,
                     middleware: function (connect) {
                         return [
                             mountFolder(connect, 'test'),
