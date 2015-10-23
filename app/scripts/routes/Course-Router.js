@@ -11,9 +11,7 @@ Courses.Routers = Courses.Routers || {};
         	// Backbone will try to match the route above first
     	},
     	getCourse: function(id){
-    		console.log(id);
-    		var detailCourse = new Courses.Views.CourseDetailView({model: course});
-    		$(".container").html(detailCourse.render().el);
+    		$(".content").html(id);
     	}
     });
 
