@@ -5,9 +5,9 @@ Courses.Views = Courses.Views || {};
 (function () {
     'use strict';
 
-    Courses.Views.CourseView = Backbone.View.extend({
+    Courses.Views.CourseDetailView = Backbone.View.extend({
 
-        template: JST['app/scripts/templates/Course-View.ejs'],
+        template: JST['app/scripts/templates/Course-Detail-View.ejs'],
 
         tagName: 'div',
 
@@ -15,9 +15,7 @@ Courses.Views = Courses.Views || {};
 
         className: '',
 
-        events: {
-            'click a' : 'onClick'
-        },
+        events: {},
 
         initialize: function () {
             this.listenTo(this.model, 'change', this.render);
@@ -25,12 +23,8 @@ Courses.Views = Courses.Views || {};
 
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
-            return this;
-        },
-
-        onClick :function() {
-            
         }
+
     });
 
 })();

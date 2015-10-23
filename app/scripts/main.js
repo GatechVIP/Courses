@@ -16,6 +16,9 @@ $(document).ready(function () {
     'use strict';
     Courses.init();
 
+    var appRouter = new Courses.Routers.CourseRouter;
+    Backbone.history.start();
+    
     var course1 = new Courses.Models.Course({
             name:"ACCT 2101 ACCOUNTING I",
             description:"An introduction to the measurement and financial reporting of organizations and the interpretation of the resulting financial statements. Credit not allowed for MGT 3000 and ACCT 2101. ",
