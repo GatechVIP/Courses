@@ -22,7 +22,9 @@ Courses.Views = Courses.Views || {};
         },
 
         render: function () {
-            this.$el.html(this.template(this.model.toJSON()));
+            
+            this.$el.html();
+            return this;
         }
 
     });
