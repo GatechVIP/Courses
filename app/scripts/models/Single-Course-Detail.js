@@ -5,7 +5,7 @@ Courses.Models = Courses.Models || {};
 (function () {
     'use strict';
 
-    Courses.Models.Course = Backbone.Model.extend({
+    Courses.Models.SingleCourseDetail = Backbone.Model.extend({
 
         url: '',
 
@@ -13,9 +13,16 @@ Courses.Models = Courses.Models || {};
         },
 
         defaults: {
-            name: "default",
-            description: "placeHolder",
-            id: "default"
+            professor:"",
+            size:"",
+            courseID:"",
+            gpa:0,
+            A:0,
+            B:0,
+            C:0,
+            D:0,
+            F:0,
+            W:0
         },
 
         validate: function(attrs, options) {

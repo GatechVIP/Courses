@@ -28,7 +28,6 @@ Courses.Views = Courses.Views || {};
 
         addCourse: function(course) {
             var courseView = new Courses.Views.CourseView({ model: course });
-            console.log(courseView.el);
             this.$el.append(courseView.render().el);
         }
 
